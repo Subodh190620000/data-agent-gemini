@@ -49,9 +49,9 @@ with st.sidebar:
         placeholder="AIzaSy..."
     )
     model_name = st.selectbox(
-        "Model",
-        ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-2.0-flash-exp"]
-    )
+    "Model",
+    ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"]
+)
     max_tokens = st.slider("Max tokens", 512, 8192, 2048, 256)
     st.divider()
     st.markdown("**Analysis options**")
